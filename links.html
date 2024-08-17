@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  
+  
+ .context{
+  border: 1px solid white;
+  margin-top: 0px;
+  margin-bottom: 100px;
+  margin-right: 0px;
+  margin-left: 90%;
+  
+  
+ }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+     
+    
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color:blue;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 4px 6px;
+  font-size: 17px;
+  width: 1000px;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 1px 2px;
+  height: 100%;
+  
+}
+#Home {background-color:black;}
+#News {background-color: black;}
+#Contact {background-color:black;}
+#About {background-color: black;}
+
+
+.linls{
+  color: aquamarine;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+    <h1> Jala Project</h1>
+  <a class="active" href="home.html">Home</a>
+  <a href="collapsable.html">Collapsable</a>
+  <a href="cssframes.html">Cssframes</a>
+  <a href="autocomplete.html">AutoComplete</a>
+  <a href="Iframes.html">I Frames</a>
+  <a href="images.html">Images</a>
+  <a href="links.html">Links</a>
+  <a href="menu.html">Menu</a>
+  <a href="multipletab.html">Multiple Tabs</a>
+  <a href="popups.html">Popups</a>
+  <a href="slider.html">Slider</a>
+  <a href="tooltips.html">Tooltips</a>
+  <a href="employees.html">Employess</a>
+  <a href="search.html">Search</a>
+  
+ 
+
+  
+
+
+    <body>
+    
+    
+    
+    
+</div>
+<div>
+
+
+    <div class="context">
+    <h1>
+    <a text-align="margin-right" href="login.html">Logout</a> 
+    </h1>
+  </div>
+  
+</div>
+<button class="tablink" onclick="openPage('Home', this, 'red')">Working Links</button>
+<button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">Broken Links</button>
+<button class="tablink" onclick="openPage('Contact', this, 'blue')">Image Links</button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">Status Codes</button>
+
+<div id="Home" class="tabcontent">
+  <h3>Working links</h3>
+  <p class="linls"><a href="https://www.google.com/">google</a></p>
+  <p class="linls"><a href="https://www.google.com/">google</a></p>
+  <p class="linls"><a href="https://www.google.com/">google</a></p>
+  <p class="linls"><a href="https://www.google.com/">google</a></p>
+</div>
+
+<div id="News" class="tabcontent">
+  <h3>Broken Links</h3>
+  <p class="linls"><a href="https://www.google.com/">google</a></p>
+  <p class="linls"><a href="https://www.google.com/">google</a></p>
+  <p class="linls"><a href="https://www.google.com/">google</a></p>
+  <p class="linls"><a href="https://www.google.com/">google</a></p>
+</div>
+<div id="Contact" class="tabcontent">
+  
+  <h2>Image as a Link</h2>
+  <a href="www.jala.com"><img src="https://blog.mozilla.org/wp-content/blogs.dir/278/files/2021/08/moz_explains_blue_links_blog_header-1080x720.jpg" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+  <a href="www.jala.com"><img src="https://blog.mozilla.org/wp-content/blogs.dir/278/files/2021/08/moz_explains_blue_links_blog_header-1080x720.jpg" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+  <a href="www.jala.com"><img src="https://blog.mozilla.org/wp-content/blogs.dir/278/files/2021/08/moz_explains_blue_links_blog_header-1080x720.jpg" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+<a href="www.jala.com"><img src="https://blog.mozilla.org/wp-content/blogs.dir/278/files/2021/08/moz_explains_blue_links_blog_header-1080x720.jpg" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+</div>
+
+
+
+<div id="About" class="tabcontent">
+  <h3>Status Codes</h3>
+  <a style="text-decoration:none" href="https://www.restapitutorial.com/httpstatuscodes.html">200</a>
+  <a style="text-decoration:none" href="https://magnus.jalatechnologies.com/ErrorHandler/RedirectPermanently">301</a>
+  <a style="text-decoration:none" href="https://magnus.jalatechnologies.com/ErrorHandler/NotFound">404</a>
+  <a style="text-decoration:none" href="https://magnus.jalatechnologies.com/ErrorHandler/InternalServerError">500</a>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html>
